@@ -1,18 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/cardview_shadow_start_color"
+    android:padding="5dp"
     tools:context=".MainActivity">
 
-    <TextView
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnRadio1"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:contentDescription="Radio1"
+                android:onClick="onClickStart"
+                android:scaleType="fitCenter"
+                android:src="@drawable/podmoskovie"
+                android:text="@string/http"
+                android:textSize="12sp"
+                tools:ignore="UsingOnClickInXml"
+                tools:src="@drawable/podmoskovie" />
+
+            <ImageButton
+                android:id="@+id/btnMenty"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:onClick="onClickStart"
+                android:scaleType="fitCenter"
+                android:src="@drawable/milicia"
+                android:text="@string/stream"
+                android:textSize="12sp"
+                tools:ignore="UsingOnClickInXml"
+                tools:src="@drawable/milicia" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnNashe"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:onClick="onClickStart"
+                android:scaleType="fitCenter"
+                android:src="@drawable/nashe"
+                android:text="@string/sd"
+                android:textSize="12sp"
+                tools:ignore="ContentDescription,UsingOnClickInXml" />
+
+            <ImageButton
+                android:id="@+id/btnNashe20"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:onClick="onClickStart"
+                android:scaleType="fitCenter"
+                android:src="@drawable/nashe20"
+                android:text="@string/uri"
+                android:textSize="12sp"
+                tools:ignore="UsingOnClickInXml" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnComedy"
+                style="@android:style/Widget.Holo.ImageButton"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:onClick="onClickStart"
+                android:scaleType="fitCenter"
+                android:src="@drawable/comedy"
+                android:text="@string/raw"
+                android:textSize="12sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:progressTint="#FFC400" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/cardview_shadow_start_color">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageButton
+            android:id="@+id/btnPause"
+            style="Widget.Holo.ImageButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@android:drawable/ic_media_pause"
+            android:text="@string/pause"
+            android:textSize="12sp"
+            tools:ignore="ContentDescription, TouchTargetSizeCheck,TouchTargetSizeCheck,UsingOnClickInXml"
+            tools:src="@android:drawable/ic_media_pause" />
+
+        <ImageButton
+            android:id="@+id/btnResume"
+            style="Widget.Holo.ImageButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@android:drawable/ic_media_play"
+            android:text="@string/resume"
+            android:textSize="12sp"
+            tools:ignore="ContentDescription,TouchTargetSizeCheck,UsingOnClickInXml"
+            tools:src="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            android:id="@+id/btnStop"
+            style="Widget.Holo.ImageButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@android:drawable/picture_frame"
+            android:text="@string/stop"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="ContentDescription,TouchTargetSizeCheck,UsingOnClickInXml" />
+    </LinearLayout>
+
+</RelativeLayout>
