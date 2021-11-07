@@ -2,6 +2,7 @@ package ru.demonapps.onlineradio;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -48,6 +49,7 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     mediaPlayer.setOnPreparedListener(this);
                     mediaPlayer.prepareAsync();
                     progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.podmoskovie);
                     break;
                 case R.id.btnMenty:
                     Log.d(LOG_TAG, "start MENTY");
@@ -58,6 +60,7 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     mediaPlayer.setOnPreparedListener(this);
                     mediaPlayer.prepareAsync();
                     progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.milicia);
                     break;
                 case R.id.btnNashe:
                     Log.d(LOG_TAG, "start NASHE");
@@ -67,6 +70,7 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     mediaPlayer.setOnPreparedListener(this);
                     mediaPlayer.prepareAsync();
                     progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.nashe);
                     break;
                 case R.id.btnNashe20:
                     Log.d(LOG_TAG, "start NASHE20");
@@ -76,6 +80,7 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     mediaPlayer.setOnPreparedListener(this);
                     mediaPlayer.prepareAsync();
                     progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.nashe20);
                     break;
                 case R.id.btnComedy:
                     Log.d(LOG_TAG, "start Comedy");
@@ -85,6 +90,7 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     mediaPlayer.setOnPreparedListener(this);
                     mediaPlayer.prepareAsync();
                     progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.comedy);
                     break;
             }
 
@@ -126,6 +132,7 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
             case R.id.btnStop:
                 mediaPlayer.stop();
                 progressBar.setVisibility(View.INVISIBLE);
+                progressBar.setBackgroundColor(Color.WHITE);
                 break;
         }
     }

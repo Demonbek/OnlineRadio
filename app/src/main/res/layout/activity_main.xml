@@ -19,8 +19,8 @@
             <ImageButton
                 android:id="@+id/btnRadio1"
                 style="@android:style/Widget.Holo.ImageButton"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_weight="1"
                 android:contentDescription="Radio1"
                 android:onClick="onClickStart"
@@ -34,10 +34,10 @@
             <ImageButton
                 android:id="@+id/btnMenty"
                 style="@android:style/Widget.Holo.ImageButton"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_weight="1"
-                android:contentDescription="TODO"
+                android:contentDescription="Menty"
                 android:onClick="onClickStart"
                 android:scaleType="fitCenter"
                 android:src="@drawable/milicia"
@@ -55,8 +55,8 @@
             <ImageButton
                 android:id="@+id/btnNashe"
                 style="@android:style/Widget.Holo.ImageButton"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_weight="1"
                 android:onClick="onClickStart"
                 android:scaleType="fitCenter"
@@ -68,8 +68,8 @@
             <ImageButton
                 android:id="@+id/btnNashe20"
                 style="@android:style/Widget.Holo.ImageButton"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_weight="1"
                 android:contentDescription="TODO"
                 android:onClick="onClickStart"
@@ -87,8 +87,8 @@
             <ImageButton
                 android:id="@+id/btnComedy"
                 style="@android:style/Widget.Holo.ImageButton"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_weight="1"
                 android:contentDescription="TODO"
                 android:onClick="onClickStart"
@@ -100,9 +100,10 @@
 
             <ProgressBar
                 android:id="@+id/progressBar"
-                style="?android:attr/progressBarStyle"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
                 android:progressTint="#FFC400" />
         </TableRow>
 
