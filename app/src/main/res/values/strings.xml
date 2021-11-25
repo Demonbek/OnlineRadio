@@ -1,10 +1,5 @@
 <resources>
     <string name="app_name">OnlineRadio</string>
-    <string name="http">HTTP</string>
-    <string name="stream">Stream</string>
-    <string name="sd">SD</string>
-    <string name="uri">Uri</string>
-    <string name="raw">Raw</string>
     <string name="pause">Pause</string>
     <string name="resume">Resume</string>
     <string name="stop">Stop</string>
@@ -12,4 +7,12 @@
     <string name="backward">Back</string>
     <string name="forward">Forw</string>
     <string name="info">Info</string>
+    <string name="menty">Menty</string>
+    <string name="nashe20">Наше 2.0</string>
+    <string name="nashe">Наше</string>
+    <string name="radio1">Radio 1</string>
+    <string name="comedy">Comedy</string>
+    <string name="avto">АвтоРадио</string>
+    <string name="dfm">DFM</string>
+    <string name="vibor">Выбор</string>
 </resources>
