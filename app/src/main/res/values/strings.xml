@@ -15,4 +15,20 @@
     <string name="avto">АвтоРадио</string>
     <string name="dfm">DFM</string>
     <string name="vibor">Выбор</string>
+    <string name="chocolate">Радио Шоколад</string>
+    <string name="souz">Союз FM</string>
+    <string name="ultra">Radio Ultra</string>
+    <string name="pioner">Пионер FM</string>
+    <string name="energy">Радио ENERGY</string>
+    <string name="disco90">Дискотека 90-х</string>
+    <string name="romantika">Радио Романтика</string>
+    <string name="relax">Relax FM</string>
+    <string name="retro">Ретро ФМ</string>
+    <string name="rnr">Rock’n’Roll FM</string>
+    <string name="umor">Юмор FM</string>
+    <string name="dor">Дорожное Радио</string>
+    <string name="visocky">Высоцкий - Русское Радио</string>
+    <string name="diskoteka_sssr">Радио Дискотека СССР</string>
+    <string name="hitfm">Хит FM</string>
+    <string name="hardradio">HARDRADIO</string>
 </resources>

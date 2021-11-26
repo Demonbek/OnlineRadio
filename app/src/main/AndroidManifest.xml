@@ -12,13 +12,12 @@
         android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.OnlineRadio"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
         tools:ignore="AllowBackup"
         tools:targetApi="m">
-
         <activity
-            android:name=".MainActivity"
-            android:screenOrientation="locked"
+            android:name=".Zastavka"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,6 +25,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Радио Он-лайн"
+            android:screenOrientation="locked"/>
+
+
     </application>
 
 </manifest>

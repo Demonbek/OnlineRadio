@@ -19,13 +19,27 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
         MediaPlayer.OnCompletionListener {
 
     final String LOG_TAG = "myLogs";
-    final String DATA_RADIO1 = "http://cdn.radio1.news:8000/rtvp_mp3";
+    //final String DATA_RADIO1 = "http://cdn.radio1.news:8000/rtvp_mp3";
+    final String DATA_HARDRADIO = "http://144.217.29.205/live?type=http&nocache=66371";
     final String DATA_MENTY = "https://radiomv.hostingradio.ru:80/radiomv128.mp3";
     final String DATA_NASHE = "https://nashe1.hostingradio.ru:80/nashe-128.mp3";
     final String DATA_NASHE20 = "https://nashe1.hostingradio.ru:18000/nashe20-128.mp3";
     final String DATA_COMEDY = "https://ic6.101.ru:8000/stream/air/aac/64/202";
     final String DATA_AVTO = "https://ic7.101.ru:8000/v3_1";
     final String DATA_RETRO = "https://emgregion.hostingradio.ru:8064/moscow.retrofm.mp3";
+    final String DATA_ZAICEV = "https://zaycevfm.cdnvideo.ru/ZaycevFM_pop_256.mp3";
+    final String DATA_PIONER = "https://radio-node-2.dline-media.com/ppr128.mp3";
+    final String DATA_ULTRA = "https://nashe1.hostingradio.ru:80/ultra-128.mp3";
+    final String DATA_SOUZ = "https://soyuzfm.su:9000//soyuzfm-320.mp3";
+    final String DATA_CHOCOLAD = "https://choco.hostingradio.ru:10010/fm";
+    final String DATA_DISCO_USSR = "https://listen4.myradio24.com/dance80";
+    final String DATA_HITFM = "https://hitfm.hostingradio.ru/hitfm128.mp3";
+    final String DATA_ROMATIKA = "https://ic4.101.ru:8050/v4_1";
+    final String DATA_RELAX = "https://pub0302.101.ru:8443/stream/air/aac/64/200";
+    final String DATA_RNR = "https://a6.radioheart.ru:9046/RH1972";
+    final String DATA_UMOR = "https://pub0301.101.ru:8443/stream/air/mp3/256/102";
+    final String DATA_DOR = "https://dorognoe.hostingradio.ru:8000/dorognoe";
+
     MediaPlayer mediaPlayer;
     AudioManager am;
     ScrollView myScroll;
@@ -50,10 +64,10 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
 
         try {
             switch (view.getId()) {
-                case R.id.btnRadio1:
+                case R.id.btnHARDRADIO:
                     Log.d(LOG_TAG, "start RADIO1");
                     mediaPlayer = new MediaPlayer();
-                    mediaPlayer.setDataSource(DATA_RADIO1);
+                    mediaPlayer.setDataSource(DATA_HARDRADIO);
                     mediaPlayer.setAudioAttributes(
                             new AudioAttributes
                                     .Builder()
@@ -64,7 +78,7 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     mediaPlayer.setOnPreparedListener(this);
                     mediaPlayer.prepareAsync();
                     progressBar.setVisibility(View.VISIBLE);
-                    progressBar.setBackgroundResource(R.drawable.podmoskovie);
+                    progressBar.setBackgroundResource(R.drawable.hardradio);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
                     myScroll.scrollTo(0,0);
@@ -160,8 +174,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setVisibility(View.VISIBLE);
                     myScroll.scrollTo(0,0);
                     break;
-                case R.id.btnDfm:
-                    Log.d(LOG_TAG, "start RETRO");
+                case R.id.btnRetro:
+                    Log.d(LOG_TAG, "start Retro");
                     mediaPlayer = new MediaPlayer();
                     mediaPlayer.setDataSource(DATA_RETRO);
                     mediaPlayer.setAudioAttributes(
@@ -174,6 +188,222 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     mediaPlayer.prepareAsync();
                     progressBar.setVisibility(View.VISIBLE);
                     progressBar.setBackgroundResource(R.drawable.retrofm);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0,0);
+                    break;
+                case R.id.btnZaicev:
+                    Log.d(LOG_TAG, "start ZAICEV");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_ZAICEV);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.zaycev);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0,0);
+                    break;
+                case R.id.btnPioner:
+                    Log.d(LOG_TAG, "start Pioner");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_PIONER);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.pioner);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0,0);
+                    break;
+                case R.id.btnUltra:
+                    Log.d(LOG_TAG, "start ULTRA");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_ULTRA);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.ultra);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0,0);
+                    break;
+                case R.id.btnSouz:
+                    Log.d(LOG_TAG, "start SOUZ");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_SOUZ);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.soyuz_fm);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0,0);
+                    break;
+                case R.id.btnChocolad:
+                    Log.d(LOG_TAG, "start CHOCOLAD");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_CHOCOLAD);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.chocolate);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0,0);
+                    break;
+                case R.id.btnDisco_ussr:
+                    Log.d(LOG_TAG, "start DISCO_USSR");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_DISCO_USSR);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.diskoteka_sssr);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0,0);
+                    break;
+                case R.id.btnHitFm:
+                    Log.d(LOG_TAG, "start HITFM");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_HITFM);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.hitfm);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0,0);
+                    break;
+                case R.id.btnRomantika:
+                    Log.d(LOG_TAG, "start ROMATIKA");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_ROMATIKA);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.romantika);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0,0);
+                    break;
+                case R.id.btnRelax:
+                    Log.d(LOG_TAG, "start RELAX");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_RELAX);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.relaxfm);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0,0);
+                    break;
+                case R.id.btnRnr:
+                    Log.d(LOG_TAG, "start RNR");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_RNR);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.rock_n_roll_fm);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0,0);
+                    break;
+                case R.id.btnUmor:
+                    Log.d(LOG_TAG, "start UMOR");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_UMOR);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.umor);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0,0);
+                    break;
+                case R.id.btnDor:
+                    Log.d(LOG_TAG, "start DOR");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_DOR);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.dor);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
                     myScroll.scrollTo(0,0);

@@ -41,18 +41,18 @@
                     android:visibility="gone" />
 
                 <ImageButton
-                    android:id="@+id/btnRadio1"
+                    android:id="@+id/btnHARDRADIO"
                     style="@android:style/Widget.Holo.ImageButton"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_weight="1"
-                    android:contentDescription="@string/radio1"
+                    android:contentDescription="@string/hardradio"
                     android:onClick="onClickStart"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/podmoskovie"
+                    android:src="@drawable/hardradio"
                     android:textSize="12sp"
                     tools:ignore="UsingOnClickInXml"
-                    tools:src="@drawable/podmoskovie" />
+                    tools:src="@drawable/hardradio" />
 
             </TableRow>
 
@@ -112,12 +112,12 @@
                         tools:src="@drawable/avto" />
 
                     <ImageButton
-                        android:id="@+id/btnDfm"
+                        android:id="@+id/btnRetro"
                         style="@android:style/Widget.Holo.ImageButton"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_weight="1"
-                        android:contentDescription="@string/dfm"
+                        android:contentDescription="@string/retro"
                         android:onClick="onClickStart"
                         android:scaleType="fitCenter"
                         android:src="@drawable/retrofm"
@@ -159,7 +159,200 @@
                         tools:src="@drawable/milicia" />
 
                 </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
+                    <ImageButton
+                        android:id="@+id/btnPioner"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/pioner"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pioner"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml" />
+
+                    <ImageButton
+                        android:id="@+id/btnUltra"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/ultra"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ultra"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml"
+                        tools:src="@drawable/ultra" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/btnSouz"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/souz"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/soyuz_fm"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml" />
+
+                    <ImageButton
+                        android:id="@+id/btnChocolad"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/chocolate"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/chocolate"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml"
+                        tools:src="@drawable/chocolate" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/btnDisco_ussr"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/diskoteka_sssr"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/diskoteka_sssr"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml" />
+
+                    <ImageButton
+                        android:id="@+id/btnHitFm"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/hitfm"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/hitfm"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml"
+                        tools:src="@drawable/hitfm" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/btnRomantika"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/romantika"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/romantika"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml" />
+
+                    <ImageButton
+                        android:id="@+id/btnRelax"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/relax"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/relaxfm"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml"
+                        tools:src="@drawable/milicia" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/btnRnr"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/rnr"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/rock_n_roll_fm"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml" />
+
+                    <ImageButton
+                        android:id="@+id/btnZaicev"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/visocky"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/zaycev"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml"
+                        tools:src="@drawable/zaycev" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/btnUmor"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/umor"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/umor"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml" />
+
+                    <ImageButton
+                        android:id="@+id/btnDor"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/dor"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/dor"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml"
+                        tools:src="@drawable/dor" />
+
+                </TableRow>
             </TableLayout>
         </LinearLayout>
     </ScrollView>
