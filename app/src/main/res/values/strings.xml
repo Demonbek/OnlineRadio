@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">OnlineRadio</string>
+    <string name="app_name">Радио Он-лайн</string>
+    <string name="buildconfig_version_name">Версия+BuildConfig.VERSION_NAME</string>
     <string name="pause">Pause</string>
     <string name="resume">Resume</string>
     <string name="stop">Stop</string>
@@ -7,12 +8,12 @@
     <string name="backward">Back</string>
     <string name="forward">Forw</string>
     <string name="info">Info</string>
-    <string name="menty">Menty</string>
-    <string name="nashe20">Наше 2.0</string>
-    <string name="nashe">Наше</string>
-    <string name="radio1">Radio 1</string>
-    <string name="comedy">Comedy</string>
-    <string name="avto">АвтоРадио</string>
+    <string name="menty">Милицейская волна</string>
+    <string name="nashe20">Наше радио 2.0</string>
+    <string name="nashe">Наше радио</string>
+    <string name="radio1">Радио подмосковья</string>
+    <string name="comedy">Comedy FM</string>
+    <string name="avto">Авто Радио</string>
     <string name="dfm">DFM</string>
     <string name="vibor">Выбор</string>
     <string name="chocolate">Радио Шоколад</string>
@@ -20,15 +21,16 @@
     <string name="ultra">Radio Ultra</string>
     <string name="pioner">Пионер FM</string>
     <string name="energy">Радио ENERGY</string>
-    <string name="disco90">Дискотека 90-х</string>
     <string name="romantika">Радио Романтика</string>
     <string name="relax">Relax FM</string>
     <string name="retro">Ретро ФМ</string>
     <string name="rnr">Rock’n’Roll FM</string>
     <string name="umor">Юмор FM</string>
     <string name="dor">Дорожное Радио</string>
-    <string name="visocky">Высоцкий - Русское Радио</string>
     <string name="diskoteka_sssr">Радио Дискотека СССР</string>
     <string name="hitfm">Хит FM</string>
-    <string name="hardradio">HARDRADIO</string>
+    <string name="zaicev">Зайцев FM</string>
+    <string name="hardradio">Hardradio.com</string>
+    <string name="proga">О программе</string>
+    <string name="group">Группа в ВК</string>
 </resources>

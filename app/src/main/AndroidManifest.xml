@@ -2,23 +2,33 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="ru.demonapps.onlineradio">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        android:theme="@style/Theme.Design.Light"
+        android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup"
         tools:targetApi="m">
         <activity
+            android:name=".Proga"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".Onas"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            android:exported="false" />
+        <activity
             android:name=".Zastavka"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,9 +38,9 @@
         <activity
             android:name=".MainActivity"
             android:label="Радио Он-лайн"
-            android:screenOrientation="locked"/>
-
-
+            android:screenOrientation="locked"
+            android:theme="@style/Widget.AppCompat.Toolbar"
+        />
     </application>
 
 </manifest>

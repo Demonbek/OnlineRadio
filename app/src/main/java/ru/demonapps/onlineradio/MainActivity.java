@@ -2,12 +2,15 @@ package ru.demonapps.onlineradio;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -55,7 +58,7 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
         progressBar.setVisibility(View.GONE);
         imageVibor = findViewById(R.id.imageVibor);
         imageVibor.setVisibility(View.VISIBLE);
-        myScroll= findViewById(R.id.myScroll);
+        myScroll = findViewById(R.id.myScroll);
     }
 
     @SuppressLint("NonConstantResourceId")
@@ -81,7 +84,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.hardradio);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.hardradio);
                     break;
                 case R.id.btnMenty:
                     Log.d(LOG_TAG, "start MENTY");
@@ -100,7 +104,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.milicia);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.menty);
                     break;
                 case R.id.btnNashe:
                     Log.d(LOG_TAG, "start NASHE");
@@ -118,7 +123,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.nashe);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.nashe);
                     break;
                 case R.id.btnNashe20:
                     Log.d(LOG_TAG, "start NASHE20");
@@ -136,7 +142,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.nashe20);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.nashe20);
                     break;
                 case R.id.btnComedy:
                     Log.d(LOG_TAG, "start Comedy");
@@ -154,7 +161,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.comedy);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.comedy);
                     break;
                 case R.id.btnAvto:
                     Log.d(LOG_TAG, "start Avto");
@@ -172,7 +180,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.avto);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.avto);
                     break;
                 case R.id.btnRetro:
                     Log.d(LOG_TAG, "start Retro");
@@ -190,7 +199,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.retrofm);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.retro);
                     break;
                 case R.id.btnZaicev:
                     Log.d(LOG_TAG, "start ZAICEV");
@@ -208,7 +218,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.zaycev);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.zaicev);
                     break;
                 case R.id.btnPioner:
                     Log.d(LOG_TAG, "start Pioner");
@@ -226,7 +237,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.pioner);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.pioner);
                     break;
                 case R.id.btnUltra:
                     Log.d(LOG_TAG, "start ULTRA");
@@ -244,7 +256,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.ultra);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.ultra);
                     break;
                 case R.id.btnSouz:
                     Log.d(LOG_TAG, "start SOUZ");
@@ -262,7 +275,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.soyuz_fm);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.souz);
                     break;
                 case R.id.btnChocolad:
                     Log.d(LOG_TAG, "start CHOCOLAD");
@@ -280,7 +294,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.chocolate);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.chocolate);
                     break;
                 case R.id.btnDisco_ussr:
                     Log.d(LOG_TAG, "start DISCO_USSR");
@@ -298,7 +313,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.diskoteka_sssr);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.diskoteka_sssr);
                     break;
                 case R.id.btnHitFm:
                     Log.d(LOG_TAG, "start HITFM");
@@ -316,7 +332,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.hitfm);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.hitfm);
                     break;
                 case R.id.btnRomantika:
                     Log.d(LOG_TAG, "start ROMATIKA");
@@ -334,7 +351,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.romantika);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.romantika);
                     break;
                 case R.id.btnRelax:
                     Log.d(LOG_TAG, "start RELAX");
@@ -352,7 +370,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.relaxfm);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.relax);
                     break;
                 case R.id.btnRnr:
                     Log.d(LOG_TAG, "start RNR");
@@ -370,7 +389,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.rock_n_roll_fm);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.rnr);
                     break;
                 case R.id.btnUmor:
                     Log.d(LOG_TAG, "start UMOR");
@@ -388,7 +408,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.umor);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.umor);
                     break;
                 case R.id.btnDor:
                     Log.d(LOG_TAG, "start DOR");
@@ -406,7 +427,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setBackgroundResource(R.drawable.dor);
                     imageVibor.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    myScroll.scrollTo(0,0);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.dor);
                     break;
             }
 
@@ -450,7 +472,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                 progressBar.setBackgroundColor(Color.WHITE);
                 imageVibor.setVisibility(View.VISIBLE);
                 progressBar.setVisibility(View.GONE);
-                myScroll.scrollTo(0,0);
+                myScroll.scrollTo(0, 0);
+                setTitle(R.string.app_name);
                 break;
         }
     }
@@ -472,4 +495,32 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
         releaseMP();
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @SuppressLint("NonConstantResourceId")
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // получим идентификатор выбранного пункта меню
+        int id = item.getItemId();
+
+        // Операции для выбранного пункта меню
+        switch (id) {
+            case R.id.action_settings:
+
+                Intent intent = new Intent(this, Proga.class);
+                startActivity(intent);
+                return true;
+            case R.id.action_settings2:
+                Intent intentOnas = new Intent(this, Onas.class);
+                startActivity(intentOnas);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }
