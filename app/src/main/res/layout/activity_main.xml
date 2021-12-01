@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by DemonApps on 01.12.2021, 15:35
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 27.11.2021, 16:35
+  ~  */
+  -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:tools="http://schemas.android.com/tools"
@@ -373,6 +381,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@android:drawable/alert_dark_frame"
             android:contentDescription="@string/resume"
             android:onClick="onClick"
             android:src="@android:drawable/ic_media_pause"
@@ -387,11 +396,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@android:drawable/alert_dark_frame"
             android:contentDescription="@string/pause"
             android:onClick="onClick"
             android:src="@android:drawable/ic_media_play"
             android:text="@string/resume"
             android:textSize="12sp"
+            android:tint="@color/cardview_shadow_start_color"
             tools:ignore="ContentDescription,TouchTargetSizeCheck,UsingOnClickInXml,ImageContrastCheck"
             tools:src="@android:drawable/ic_media_play" />
 
@@ -401,6 +412,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@android:drawable/alert_dark_frame"
             android:contentDescription="@string/stop"
             android:onClick="onClick"
             android:src="@android:drawable/picture_frame"

@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by DemonApps on 01.12.2021, 15:35
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 01.12.2021, 14:37
+  ~  */
+  -->
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="ru.demonapps.onlineradio">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -19,12 +28,22 @@
         tools:targetApi="m">
         <activity
             android:name=".Proga"
-            android:theme="@style/Theme.Design.Light.NoActionBar"
-            android:exported="false" />
+            android:theme="@style/Theme.AppCompat"
+            android:label="@string/proga"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".Onas"
-            android:theme="@style/Theme.Design.Light.NoActionBar"
-            android:exported="false" />
+            android:theme="@style/Theme.AppCompat"
+            android:label="@string/group"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".OtherApps"
+            android:theme="@style/Theme.AppCompat"
+            android:label="@string/otherApps"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".Zastavka"
             android:exported="true"

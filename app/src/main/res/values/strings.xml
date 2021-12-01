@@ -1,3 +1,11 @@
+<!--
+  ~ /**
+  ~  * Created by DemonApps on 01.12.2021, 15:35
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 27.11.2021, 16:35
+  ~  */
+  -->
+
 <resources>
     <string name="app_name">Радио Он-лайн</string>
     <string name="buildconfig_version_name">Версия+BuildConfig.VERSION_NAME</string>
@@ -33,4 +41,5 @@
     <string name="hardradio">Hardradio.com</string>
     <string name="proga">О программе</string>
     <string name="group">Группа в ВК</string>
+    <string name="otherApps">Ещё приложения</string>
 </resources>

@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by DemonApps on 01.12.2021, 15:35
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 27.11.2021, 16:35
+  ~  */
+  -->
+
 <resources>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>

@@ -1,3 +1,11 @@
+/*
+ * *
+ *  * Created by DemonApps on 01.12.2021, 15:35
+ *  * Copyright (c) 2021 . All rights reserved.
+ *  * Last modified 01.12.2021, 14:48
+ *
+ */
+
 package ru.demonapps.onlineradio;
 
 import android.annotation.SuppressLint;
@@ -53,6 +61,7 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         am = (AudioManager) getSystemService(AUDIO_SERVICE);
         progressBar = findViewById(R.id.progressBar);
         progressBar.setVisibility(View.GONE);
@@ -60,6 +69,7 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
         imageVibor.setVisibility(View.VISIBLE);
         myScroll = findViewById(R.id.myScroll);
     }
+
 
     @SuppressLint("NonConstantResourceId")
     public void onClickStart(View view) {
@@ -518,7 +528,10 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                 Intent intentOnas = new Intent(this, Onas.class);
                 startActivity(intentOnas);
                 return true;
-
+            case R.id.action_settings3:
+                Intent intentOtherApps = new Intent(this, OtherApps.class);
+                startActivity(intentOtherApps);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
