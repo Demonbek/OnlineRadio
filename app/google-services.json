@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "674564340791",
+    "firebase_url": "https://motofesty-default-rtdb.firebaseio.com",
+    "project_id": "motofesty",
+    "storage_bucket": "motofesty.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674564340791:android:edf0884480a4b32b77d3b2",
+        "android_client_info": {
+          "package_name": "ru.demonapps.motofesty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674564340791-96ho0a7bn32518ijqobv6caqmhhcr8dh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKXIgTU4u5Ro2u7fPCggE99twO11kdOxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674564340791-96ho0a7bn32518ijqobv6caqmhhcr8dh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674564340791:android:59eb831946c7bdc677d3b2",
+        "android_client_info": {
+          "package_name": "ru.demonapps.onlineradio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674564340791-3e0h4lfic6dqjn9petpd6t4kmbfnplqd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.demonapps.onlineradio",
+            "certificate_hash": "cbe055a9e3dbf11a7149ac3e8fd750c7dc0d3c0b"
+          }
+        },
+        {
+          "client_id": "674564340791-uo3sc8ilg5fdnvae580bvg4tmua87evh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.demonapps.onlineradio",
+            "certificate_hash": "c94a0190f521f1d7dbca252d3f78fdbff82002d2"
+          }
+        },
+        {
+          "client_id": "674564340791-96ho0a7bn32518ijqobv6caqmhhcr8dh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKXIgTU4u5Ro2u7fPCggE99twO11kdOxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674564340791-96ho0a7bn32518ijqobv6caqmhhcr8dh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

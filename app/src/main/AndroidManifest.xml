@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ /**
-  ~  * Created by DemonApps on 01.12.2021, 15:35
+  ~  * Created by DemonApps on 02.12.2021, 17:40
   ~  * Copyright (c) 2021 . All rights reserved.
-  ~  * Last modified 01.12.2021, 14:37
+  ~  * Last modified 02.12.2021, 17:27
   ~  */
   -->
 
@@ -15,14 +15,20 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <queries>
+        <intent>
 
+            <action android:name="com.google.android.youtube.api.service.START"/>
+
+        </intent>
+    </queries>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Design.Light"
+        android:theme="@style/Theme.AppCompat"
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup"
         tools:targetApi="m">
@@ -32,6 +38,11 @@
             android:label="@string/proga"
             android:exported="false"
             android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".Video"
+            android:label="@string/video"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Onas"
             android:theme="@style/Theme.AppCompat"

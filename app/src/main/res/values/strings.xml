@@ -1,8 +1,8 @@
 <!--
   ~ /**
-  ~  * Created by DemonApps on 01.12.2021, 15:35
+  ~  * Created by DemonApps on 02.12.2021, 17:40
   ~  * Copyright (c) 2021 . All rights reserved.
-  ~  * Last modified 27.11.2021, 16:35
+  ~  * Last modified 02.12.2021, 17:13
   ~  */
   -->
 
@@ -42,4 +42,5 @@
     <string name="proga">О программе</string>
     <string name="group">Группа в ВК</string>
     <string name="otherApps">Ещё приложения</string>
+    <string name="video">YouTube</string>
 </resources>

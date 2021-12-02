@@ -1,8 +1,8 @@
 /*
  * *
- *  * Created by DemonApps on 01.12.2021, 15:35
+ *  * Created by DemonApps on 02.12.2021, 17:40
  *  * Copyright (c) 2021 . All rights reserved.
- *  * Last modified 01.12.2021, 14:48
+ *  * Last modified 02.12.2021, 17:09
  *
  */
 
@@ -519,7 +519,7 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
 
         // Операции для выбранного пункта меню
         switch (id) {
-            case R.id.action_settings:
+            case R.id.action_settings1:
 
                 Intent intent = new Intent(this, Proga.class);
                 startActivity(intent);
@@ -531,6 +531,10 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
             case R.id.action_settings3:
                 Intent intentOtherApps = new Intent(this, OtherApps.class);
                 startActivity(intentOtherApps);
+                return true;
+            case R.id.action_settings4:
+                Intent intentVideo = new Intent(this, Video.class);
+                startActivity(intentVideo);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

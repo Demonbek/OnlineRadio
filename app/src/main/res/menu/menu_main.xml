@@ -1,22 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ /**
-  ~  * Created by DemonApps on 01.12.2021, 15:35
+  ~  * Created by DemonApps on 02.12.2021, 17:40
   ~  * Copyright (c) 2021 . All rights reserved.
-  ~  * Last modified 27.11.2021, 16:35
+  ~  * Last modified 02.12.2021, 17:37
   ~  */
   -->
 
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ru.demonapps.onlineradio.MainActivity">
+
 
     <item
-        android:id="@+id/action_settings"
-        android:title="@string/proga" />
+        android:id="@+id/action_settings4"
+        android:icon="@android:drawable/presence_video_online"
+        android:title="@string/video"
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_settings2"
         android:title="@string/group" />
     <item
+        android:id="@+id/action_settings1"
+        android:title="@string/proga" />
+    <item
         android:id="@+id/action_settings3"
         android:title="@string/otherApps" />
+
 </menu>
