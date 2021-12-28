@@ -1,8 +1,8 @@
 /*
  * *
- *  * Created by DemonApps on 02.12.2021, 17:40
+ *  * Created by DemonApps on 28.12.2021, 18:33
  *  * Copyright (c) 2021 . All rights reserved.
- *  * Last modified 02.12.2021, 17:09
+ *  * Last modified 28.12.2021, 18:19
  *
  */
 
@@ -31,6 +31,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
 
     final String LOG_TAG = "myLogs";
     //final String DATA_RADIO1 = "http://cdn.radio1.news:8000/rtvp_mp3";
+    final String DATA_BIKER = "https://listen4.myradio24.com/69846";
+    final String DATA_MOTO = "https://stream.motoradio.online/high-mp3";
     final String DATA_HARDRADIO = "http://144.217.29.205/live?type=http&nocache=66371";
     final String DATA_MENTY = "https://radiomv.hostingradio.ru:80/radiomv128.mp3";
     final String DATA_NASHE = "https://nashe1.hostingradio.ru:80/nashe-128.mp3";
@@ -96,6 +98,46 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     progressBar.setVisibility(View.VISIBLE);
                     myScroll.scrollTo(0, 0);
                     setTitle(R.string.hardradio);
+                    break;
+                case R.id.btnBiker:
+                    Log.d(LOG_TAG, "start Biker FM");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_BIKER);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    Log.d(LOG_TAG, "prepareAsync");
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.biker_fm);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.biker);
+                    break;
+                case R.id.btnMoto:
+                    Log.d(LOG_TAG, "start MotoRadio");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_MOTO);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    Log.d(LOG_TAG, "prepareAsync");
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.motoradio);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.moto);
                     break;
                 case R.id.btnMenty:
                     Log.d(LOG_TAG, "start MENTY");

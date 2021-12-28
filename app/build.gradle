@@ -1,8 +1,8 @@
 /*
  * *
- *  * Created by DemonApps on 02.12.2021, 17:40
+ *  * Created by DemonApps on 28.12.2021, 18:33
  *  * Copyright (c) 2021 . All rights reserved.
- *  * Last modified 02.12.2021, 17:39
+ *  * Last modified 28.12.2021, 18:30
  *
  */
 
@@ -17,17 +17,15 @@ android {
         applicationId "ru.demonapps.onlineradio"
         minSdk 21
         targetSdk 31
-        versionCode 3
-        versionName "1.0.3"
-
+        versionCode 4
+        versionName "1.0.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'}
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8

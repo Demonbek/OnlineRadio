@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ /**
-  ~  * Created by DemonApps on 01.12.2021, 15:35
+  ~  * Created by DemonApps on 28.12.2021, 18:33
   ~  * Copyright (c) 2021 . All rights reserved.
-  ~  * Last modified 27.11.2021, 16:35
+  ~  * Last modified 28.12.2021, 18:25
   ~  */
   -->
 
@@ -36,6 +36,7 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:contentDescription="@string/vibor"
+                    android:padding="10dp"
                     android:src="@drawable/vibor"
                     tools:ignore="ImageContrastCheck" />
 
@@ -69,7 +70,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="50dp">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
+                    <ImageButton
+                        android:id="@+id/btnBiker"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/biker"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/biker_fm"
+                        android:textSize="12sp"
+                        tools:ignore="ContentDescription,UsingOnClickInXml,ImageContrastCheck" />
+
+                    <ImageButton
+                        android:id="@+id/btnMoto"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/moto"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/motoradio"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml" />
+                </TableRow>
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -116,7 +146,7 @@
                         android:scaleType="fitCenter"
                         android:src="@drawable/avto"
                         android:textSize="12sp"
-                        tools:ignore="UsingOnClickInXml"
+                        tools:ignore="UsingOnClickInXml,ImageContrastCheck"
                         tools:src="@drawable/avto" />
 
                     <ImageButton
@@ -402,7 +432,6 @@
             android:src="@android:drawable/ic_media_play"
             android:text="@string/resume"
             android:textSize="12sp"
-            android:tint="@color/cardview_shadow_start_color"
             tools:ignore="ContentDescription,TouchTargetSizeCheck,UsingOnClickInXml,ImageContrastCheck"
             tools:src="@android:drawable/ic_media_play" />
 

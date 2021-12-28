@@ -1,8 +1,8 @@
 /*
  * *
- *  * Created by DemonApps on 01.12.2021, 15:35
+ *  * Created by DemonApps on 28.12.2021, 18:33
  *  * Copyright (c) 2021 . All rights reserved.
- *  * Last modified 27.11.2021, 16:35
+ *  * Last modified 02.12.2021, 17:51
  *
  */
 
@@ -11,7 +11,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
     }
 }
 rootProject.name = "OnlineRadio"
