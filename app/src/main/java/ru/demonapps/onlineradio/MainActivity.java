@@ -1,8 +1,8 @@
 /*
  * *
- *  * Created by DemonApps on 28.12.2021, 18:33
- *  * Copyright (c) 2021 . All rights reserved.
- *  * Last modified 28.12.2021, 18:19
+ *  * Created by DemonApps on 04.02.2022, 16:28
+ *  * Copyright (c) 2022 . All rights reserved.
+ *  * Last modified 04.02.2022, 16:20
  *
  */
 
@@ -52,7 +52,8 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
     final String DATA_RNR = "https://a6.radioheart.ru:9046/RH1972";
     final String DATA_UMOR = "https://pub0301.101.ru:8443/stream/air/mp3/256/102";
     final String DATA_DOR = "https://dorognoe.hostingradio.ru:8000/dorognoe";
-
+    final String DATA_ROCKSTATION = "https://rockstation.radiostream.pro/mp3";
+    final String DATA_NESTANDART = "https://listen.radionestandart.ru:8200/128.mp3";
     MediaPlayer mediaPlayer;
     AudioManager am;
     ScrollView myScroll;
@@ -482,6 +483,44 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
                     myScroll.scrollTo(0, 0);
                     setTitle(R.string.dor);
                     break;
+                case R.id.btnRockstation:
+                    Log.d(LOG_TAG, "start AVTODOR");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_ROCKSTATION);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.rockstation);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.rockstation);
+                    break;
+                case R.id.btnNestandart:
+                    Log.d(LOG_TAG, "start NESTANDART");
+                    mediaPlayer = new MediaPlayer();
+                    mediaPlayer.setDataSource(DATA_NESTANDART);
+                    mediaPlayer.setAudioAttributes(
+                            new AudioAttributes
+                                    .Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                                    .build());
+                    mediaPlayer.setOnPreparedListener(this);
+                    mediaPlayer.prepareAsync();
+                    progressBar.setVisibility(View.VISIBLE);
+                    progressBar.setBackgroundResource(R.drawable.nestandart);
+                    imageVibor.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    myScroll.scrollTo(0, 0);
+                    setTitle(R.string.nestandart);
+                    break;
             }
 
         } catch (IOException e) {
@@ -577,6 +616,13 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
             case R.id.action_settings4:
                 Intent intentVideo = new Intent(this, Video.class);
                 startActivity(intentVideo);
+                return true;
+            case R.id.action_settings5:
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "Советую приложение 'Радио Он-Лайн'\nhttps://play.google.com/store/apps/details?id=ru.demonapps.onlineradio" );
+                sendIntent.setType("text/plain");
+                startActivity(Intent.createChooser(sendIntent,"Поделиться приложением..."));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

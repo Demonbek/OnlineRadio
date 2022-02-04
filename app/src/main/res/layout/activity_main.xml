@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ /**
-  ~  * Created by DemonApps on 28.12.2021, 18:33
-  ~  * Copyright (c) 2021 . All rights reserved.
-  ~  * Last modified 28.12.2021, 18:25
+  ~  * Created by DemonApps on 04.02.2022, 16:28
+  ~  * Copyright (c) 2022 . All rights reserved.
+  ~  * Last modified 04.02.2022, 16:20
   ~  */
   -->
 
@@ -130,7 +130,38 @@
                         android:textSize="12sp"
                         tools:ignore="UsingOnClickInXml" />
                 </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
+                    <ImageButton
+                        android:id="@+id/btnRockstation"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/rockstation"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/rockstation"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml" />
+
+                    <ImageButton
+                        android:id="@+id/btnNestandart"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/nestandart"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/nestandart"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml"
+                        tools:src="@drawable/nestandart" />
+
+                </TableRow>
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">

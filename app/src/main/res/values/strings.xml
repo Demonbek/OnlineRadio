@@ -1,8 +1,8 @@
 <!--
   ~ /**
-  ~  * Created by DemonApps on 28.12.2021, 18:33
-  ~  * Copyright (c) 2021 . All rights reserved.
-  ~  * Last modified 28.12.2021, 18:08
+  ~  * Created by DemonApps on 04.02.2022, 16:28
+  ~  * Copyright (c) 2022 . All rights reserved.
+  ~  * Last modified 04.02.2022, 16:20
   ~  */
   -->
 
@@ -41,8 +41,11 @@
     <string name="hitfm">Хит FM</string>
     <string name="zaicev">Зайцев FM</string>
     <string name="hardradio">Hardradio.com</string>
+    <string name="rockstation">Rock Станция</string>
+    <string name="nestandart">Нестандарт</string>
     <string name="proga">О программе</string>
     <string name="group">Группа в ВК</string>
     <string name="otherApps">Ещё приложения</string>
     <string name="video">YouTube</string>
+    <string name="share">Поделиться</string>
 </resources>
