@@ -1,8 +1,8 @@
 /*
  * *
- *  * Created by DemonApps on 04.02.2022, 16:28
+ *  * Created by DemonApps on 02.03.2022, 0:31
  *  * Copyright (c) 2022 . All rights reserved.
- *  * Last modified 04.02.2022, 16:20
+ *  * Last modified 02.03.2022, 0:25
  *
  */
 
@@ -24,11 +24,22 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import com.yandex.mobile.ads.banner.AdSize;
+import com.yandex.mobile.ads.banner.BannerAdEventListener;
+import com.yandex.mobile.ads.banner.BannerAdView;
+import com.yandex.mobile.ads.common.AdRequest;
+import com.yandex.mobile.ads.common.AdRequestError;
+import com.yandex.mobile.ads.common.ImpressionData;
+
 import java.io.IOException;
 
 public class MainActivity extends Activity implements MediaPlayer.OnPreparedListener,
         MediaPlayer.OnCompletionListener {
-
+    private static final String blockId = "R-M-1574620-1";
+    private BannerAdView mBannerAdViewRadio;
     final String LOG_TAG = "myLogs";
     //final String DATA_RADIO1 = "http://cdn.radio1.news:8000/rtvp_mp3";
     final String DATA_BIKER = "https://listen4.myradio24.com/69846";
@@ -71,6 +82,49 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
         imageVibor = findViewById(R.id.imageVibor);
         imageVibor.setVisibility(View.VISIBLE);
         myScroll = findViewById(R.id.myScroll);
+        // Создание экземпляра mBannerAdView.
+        mBannerAdViewRadio = findViewById(R.id.banner_ad_viewRadio);
+        mBannerAdViewRadio.setAdUnitId(blockId);
+        mBannerAdViewRadio.setAdSize(AdSize.BANNER_320x50);
+
+        // Создание объекта таргетирования рекламы.
+        final AdRequest adRequest = new AdRequest.Builder().build();
+
+        // Регистрация слушателя для отслеживания событий, происходящих в баннерной рекламе.
+        mBannerAdViewRadio.setBannerAdEventListener(new BannerAdEventListener() {
+            @Override
+            public void onAdLoaded() {
+                mBannerAdViewRadio.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onAdFailedToLoad(@NonNull AdRequestError adRequestError) {
+
+            }
+
+            @Override
+            public void onAdClicked() {
+
+            }
+
+            @Override
+            public void onLeftApplication() {
+
+            }
+
+            @Override
+            public void onReturnedToApplication() {
+
+            }
+
+            @Override
+            public void onImpression(@Nullable ImpressionData impressionData) {
+
+            }
+        });
+
+        // Загрузка объявления.
+        mBannerAdViewRadio.loadAd(adRequest);
     }
 
 

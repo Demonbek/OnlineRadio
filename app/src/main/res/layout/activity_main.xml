@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ /**
-  ~  * Created by DemonApps on 04.02.2022, 16:28
+  ~  * Created by DemonApps on 02.03.2022, 0:31
   ~  * Copyright (c) 2022 . All rights reserved.
-  ~  * Last modified 04.02.2022, 16:20
+  ~  * Last modified 02.03.2022, 0:25
   ~  */
   -->
 
@@ -434,6 +434,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
         android:background="@color/cardview_shadow_start_color">
 
         <ImageButton
@@ -481,5 +482,17 @@
             android:textStyle="bold"
             tools:ignore="ContentDescription,TouchTargetSizeCheck,UsingOnClickInXml,ImageContrastCheck" />
     </LinearLayout>
+    <!-- Реклама Яндекс-->
+    <RelativeLayout
+        android:id="@+id/activityLayoutRadio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom|center_horizontal">
 
+        <com.yandex.mobile.ads.banner.BannerAdView
+            android:id="@+id/banner_ad_viewRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
 </RelativeLayout>

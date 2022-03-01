@@ -1,8 +1,8 @@
 /*
  * *
- *  * Created by DemonApps on 04.02.2022, 16:28
+ *  * Created by DemonApps on 02.03.2022, 0:31
  *  * Copyright (c) 2022 . All rights reserved.
- *  * Last modified 04.02.2022, 16:25
+ *  * Last modified 02.03.2022, 0:28
  *
  */
 
@@ -11,14 +11,14 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 32
 
     defaultConfig {
         applicationId "ru.demonapps.onlineradio"
         minSdk 21
-        targetSdk 31
-        versionCode 5
-        versionName "1.0.5"
+        targetSdk 32
+        versionCode 6
+        versionName "0.0.6"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -48,8 +48,12 @@ dependencies {
     //MediaPlayer2
     implementation 'androidx.media2:media2:1.0.0-alpha04'
     //Exoplayer
-    implementation 'com.google.android.exoplayer:exoplayer-hls:2.16.1'
-    implementation 'com.google.android.exoplayer:exoplayer-core:2.16.1'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.17.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.17.0'
+    //Яндекс реклама
+    implementation 'com.yandex.android:mobileads:5.0.0-alpha.1'
+    implementation 'com.yandex.android:mobmetricalib:4.1.1'
+    //конец реклама
 }
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
