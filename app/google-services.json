@@ -8,12 +8,28 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:674564340791:android:edf0884480a4b32b77d3b2",
+        "mobilesdk_app_id": "1:674564340791:android:d726912c8aa65ee477d3b2",
         "android_client_info": {
-          "package_name": "ru.demonapps.motofesty"
+          "package_name": "ru.demonapps.motofest"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "674564340791-8gakmkivrup4jtiqn00nck4hotr3q3jj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.demonapps.motofest",
+            "certificate_hash": "1b9ebacc6221f1491d23a26fb8c5cb88655a055a"
+          }
+        },
+        {
+          "client_id": "674564340791-9v7vda81gutbc5i6sgvliennh7o7v60b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.demonapps.motofest",
+            "certificate_hash": "c94a0190f521f1d7dbca252d3f78fdbff82002d2"
+          }
+        },
         {
           "client_id": "674564340791-96ho0a7bn32518ijqobv6caqmhhcr8dh.apps.googleusercontent.com",
           "client_type": 3
@@ -37,7 +53,7 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:674564340791:android:59eb831946c7bdc677d3b2",
+        "mobilesdk_app_id": "1:674564340791:android:d557dc2bce5c3c5077d3b2",
         "android_client_info": {
           "package_name": "ru.demonapps.onlineradio"
         }

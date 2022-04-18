@@ -429,6 +429,39 @@
                         tools:src="@drawable/dor" />
 
                 </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/btnR13"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/r13"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/r13"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml" />
+
+                    <ImageButton
+                        android:id="@+id/btnShock"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/shock"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/shock"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml"
+                        tools:src="@drawable/shock" />
+
+                </TableRow>
             </TableLayout>
         </LinearLayout>
     </ScrollView>

@@ -43,9 +43,12 @@
     <string name="hardradio">Hardradio.com</string>
     <string name="rockstation">Rock Станция</string>
     <string name="nestandart">Нестандарт</string>
+    <string name="shock">ШОК</string>
     <string name="proga">О программе</string>
     <string name="group">Группа в ВК</string>
     <string name="otherApps">Ещё приложения</string>
     <string name="video">YouTube</string>
     <string name="share">Поделиться</string>
+    <string name="r13">Радиостанция 13</string>
+
 </resources>
