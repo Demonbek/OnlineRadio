@@ -9,17 +9,14 @@
 package ru.demonapps.onlineradio;
 
 import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.os.Build;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Objects;
@@ -27,8 +24,6 @@ import java.util.Objects;
 public class OtherApps extends AppCompatActivity {
     String url = "https://play.google.com/store/apps/dev?id=6727613984034321120";
 
-    @TargetApi(Build.VERSION_CODES.ECLAIR_MR1)
-    @RequiresApi(api = Build.VERSION_CODES.ECLAIR_MR1)
     @SuppressLint("SetJavaScriptEnabled")
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

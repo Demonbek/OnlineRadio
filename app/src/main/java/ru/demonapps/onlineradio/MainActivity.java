@@ -45,7 +45,6 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
     final String LOG_TAG = "myLogs";
     String url;
     int title, pic;
-    SharedPreferences settings;
     public static final String STORAGE_NAME = "lastRadio";
     //Ссылки на потоки
     final String DATA_BIKER = "https://listen4.myradio24.com/69846";
@@ -97,6 +96,7 @@ public class MainActivity extends Activity implements MediaPlayer.OnPreparedList
         url = settings.getString("url", "");
         title = settings.getInt("title", R.string.app_name);
         pic = settings.getInt("pic", R.drawable.vibor);
+        Log.d(LOG_TAG, "прочитано "+url+" "+getString(title)+" "+getString(pic));
         try {
             onPlay(url, title, pic);
         } catch (IOException e) {
