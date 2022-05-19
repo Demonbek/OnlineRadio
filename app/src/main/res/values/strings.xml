@@ -24,8 +24,6 @@
     <string name="radio1">Радио подмосковья</string>
     <string name="comedy">Comedy FM</string>
     <string name="avto">Авто Радио</string>
-    <string name="dfm">DFM</string>
-    <string name="vibor">Выбор</string>
     <string name="chocolate">Радио Шоколад</string>
     <string name="souz">Союз FM</string>
     <string name="ultra">Radio Ultra</string>
@@ -44,11 +42,16 @@
     <string name="rockstation">Rock Станция</string>
     <string name="nestandart">Нестандарт</string>
     <string name="shock">ШОК</string>
+    <string name="panky">Панки хОЙ</string>
+    <string name="iskatel">Искатель</string>
+    <string name="r13">Радио 13</string>
+    <string name="vibor">Выбор</string>
     <string name="proga">О программе</string>
     <string name="group">Группа в ВК</string>
     <string name="otherApps">Ещё приложения</string>
-    <string name="video">YouTube</string>
+    <string name="video">Клипы</string>
     <string name="share">Поделиться</string>
-    <string name="r13">Радиостанция 13</string>
+    <string name="logo">logo</string>
 
+    https://nashe1.hostingradio.ru/nashepunks.mp3
 </resources>

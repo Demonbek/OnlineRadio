@@ -69,7 +69,6 @@
         <activity
             android:name=".MainActivity"
             android:label="Радио Он-лайн"
-            android:screenOrientation="locked"
             android:theme="@style/Widget.AppCompat.Toolbar"
         />
         <meta-data

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~  * Created by DemonApps on 18.05.2022, 23:11
+  ~  * Copyright (c) 2022 . All rights reserved.
+  ~  * Last modified 18.05.2022, 23:11
+  ~  */
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_on_primary"
+    tools:context=".Zastavka">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:background="@color/black"
+        android:contentDescription="@string/logo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zastavka_land"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:srcCompat="@drawable/zastavka_land"
+        tools:ignore="ContentDescription,MissingConstraints"
+        tools:srcCompat="@drawable/zastavka_land" />
+</androidx.constraintlayout.widget.ConstraintLayout>

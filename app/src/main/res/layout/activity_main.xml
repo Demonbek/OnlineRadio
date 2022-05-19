@@ -84,7 +84,7 @@
                         android:contentDescription="@string/biker"
                         android:onClick="onClickStart"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/biker_fm"
+                        android:src="@drawable/biker"
                         android:textSize="12sp"
                         tools:ignore="ContentDescription,UsingOnClickInXml,ImageContrastCheck" />
 
@@ -97,28 +97,25 @@
                         android:contentDescription="@string/moto"
                         android:onClick="onClickStart"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/motoradio"
+                        android:src="@drawable/moto"
                         android:textSize="12sp"
                         tools:ignore="UsingOnClickInXml" />
                 </TableRow>
-
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-
-                    <ImageButton
-                        android:id="@+id/btnNashe"
-                        style="@android:style/Widget.Holo.ImageButton"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_weight="1"
-                        android:contentDescription="@string/nashe"
-                        android:onClick="onClickStart"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/nashe"
-                        android:textSize="12sp"
-                        tools:ignore="ContentDescription,UsingOnClickInXml,ImageContrastCheck" />
-
+                <ImageButton
+                    android:id="@+id/btnNashe"
+                    style="@android:style/Widget.Holo.ImageButton"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/nashe"
+                    android:onClick="onClickStart"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/nashe"
+                    android:textSize="12sp"
+                    tools:ignore="ContentDescription,UsingOnClickInXml,ImageContrastCheck" />
                     <ImageButton
                         android:id="@+id/btnNashe20"
                         style="@android:style/Widget.Holo.ImageButton"
@@ -131,24 +128,46 @@
                         android:src="@drawable/nashe20"
                         android:textSize="12sp"
                         tools:ignore="UsingOnClickInXml" />
+
                 </TableRow>
+
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageButton
-                        android:id="@+id/btnRockstation"
+                        android:id="@+id/btnPanky"
                         style="@android:style/Widget.Holo.ImageButton"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_weight="1"
-                        android:contentDescription="@string/rockstation"
+                        android:contentDescription="@string/panky"
                         android:onClick="onClickStart"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/rockstation"
+                        android:src="@drawable/panky"
                         android:textSize="12sp"
                         tools:ignore="UsingOnClickInXml" />
+
+                    <ImageButton
+                        android:id="@+id/btnIscatel"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/iskatel"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/iskatel"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml"
+                        tools:src="@drawable/iskatel" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                     <ImageButton
                         android:id="@+id/btnNestandart"
@@ -163,6 +182,22 @@
                         android:textSize="12sp"
                         tools:ignore="UsingOnClickInXml"
                         tools:src="@drawable/nestandart" />
+
+
+
+
+                    <ImageButton
+                        android:id="@+id/btnRockstation"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/rockstation"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/rockstation"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml" />
 
                 </TableRow>
 
@@ -193,10 +228,10 @@
                         android:contentDescription="@string/retro"
                         android:onClick="onClickStart"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/retrofm"
+                        android:src="@drawable/retro"
                         android:textSize="12sp"
                         tools:ignore="UsingOnClickInXml"
-                        tools:src="@drawable/retrofm" />
+                        tools:src="@drawable/retro" />
 
                 </TableRow>
 
@@ -226,10 +261,10 @@
                         android:contentDescription="@string/menty"
                         android:onClick="onClickStart"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/milicia"
+                        android:src="@drawable/menty"
                         android:textSize="12sp"
                         tools:ignore="UsingOnClickInXml"
-                        tools:src="@drawable/milicia" />
+                        tools:src="@drawable/menty" />
 
                 </TableRow>
 
@@ -271,39 +306,6 @@
                     android:layout_height="match_parent">
 
                     <ImageButton
-                        android:id="@+id/btnSouz"
-                        style="@android:style/Widget.Holo.ImageButton"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_weight="1"
-                        android:contentDescription="@string/souz"
-                        android:onClick="onClickStart"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/soyuz_fm"
-                        android:textSize="12sp"
-                        tools:ignore="UsingOnClickInXml" />
-
-                    <ImageButton
-                        android:id="@+id/btnChocolad"
-                        style="@android:style/Widget.Holo.ImageButton"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_weight="1"
-                        android:contentDescription="@string/chocolate"
-                        android:onClick="onClickStart"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/chocolate"
-                        android:textSize="12sp"
-                        tools:ignore="UsingOnClickInXml"
-                        tools:src="@drawable/chocolate" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageButton
                         android:id="@+id/btnDisco_ussr"
                         style="@android:style/Widget.Holo.ImageButton"
                         android:layout_width="150dp"
@@ -314,7 +316,7 @@
                         android:scaleType="fitCenter"
                         android:src="@drawable/diskoteka_sssr"
                         android:textSize="12sp"
-                        tools:ignore="UsingOnClickInXml" />
+                        tools:ignore="DuplicateIds,UsingOnClickInXml" />
 
                     <ImageButton
                         android:id="@+id/btnHitFm"
@@ -361,7 +363,7 @@
                         android:src="@drawable/relaxfm"
                         android:textSize="12sp"
                         tools:ignore="UsingOnClickInXml"
-                        tools:src="@drawable/milicia" />
+                        tools:src="@drawable/menty" />
                 </TableRow>
 
                 <TableRow
@@ -390,10 +392,43 @@
                         android:contentDescription="@string/zaicev"
                         android:onClick="onClickStart"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/zaycev"
+                        android:src="@drawable/zaicev"
                         android:textSize="12sp"
                         tools:ignore="UsingOnClickInXml"
-                        tools:src="@drawable/zaycev" />
+                        tools:src="@drawable/zaicev" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/btnSouz"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/souz"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/soyuz_fm"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml" />
+
+                    <ImageButton
+                        android:id="@+id/btnChocolad"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/chocolate"
+                        android:onClick="onClickStart"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/chocolate"
+                        android:textSize="12sp"
+                        tools:ignore="UsingOnClickInXml"
+                        tools:src="@drawable/chocolate" />
 
                 </TableRow>
 

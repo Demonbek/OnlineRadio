@@ -20,9 +20,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/logo"
         android:scaleType="centerCrop"
         android:src="@drawable/zastavka"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-        app:srcCompat="@android:color/darker_gray"
+        app:srcCompat="@drawable/zastavka"
         tools:ignore="ContentDescription,MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
