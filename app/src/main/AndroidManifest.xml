@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~ /**
-  ~  * Created by DemonApps on 02.03.2022, 0:31
-  ~  * Copyright (c) 2022 . All rights reserved.
-  ~  * Last modified 02.03.2022, 0:25
-  ~  */
-  -->
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="ru.demonapps.onlineradio">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
-    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
     <queries>
         <intent>
-
-            <action android:name="com.google.android.youtube.api.service.START"/>
-
+            <action android:name="com.google.android.youtube.api.service.START" />
         </intent>
     </queries>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -34,28 +26,33 @@
         tools:ignore="AllowBackup"
         tools:targetApi="m">
         <activity
-            android:name=".Proga"
-            android:theme="@style/Theme.AppCompat"
-            android:label="@string/proga"
+            android:name=".HomeActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Proga"
+            android:exported="false"
+            android:label="@string/proga"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Video"
             android:label="@string/video"
-            android:parentActivityName=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".HomeActivity"
             android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Onas"
-            android:theme="@style/Theme.AppCompat"
-            android:label="@string/group"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:label="@string/group"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".OtherApps"
-            android:theme="@style/Theme.AppCompat"
-            android:label="@string/otherApps"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:label="@string/otherApps"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Zastavka"
             android:exported="true"
@@ -66,11 +63,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:label="Радио Он-лайн"
-            android:theme="@style/Widget.AppCompat.Toolbar"
-        />
+
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/ic_notif" />

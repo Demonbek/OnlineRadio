@@ -1,0 +1,17 @@
+<!--
+  ~ /**
+  ~  * Created by DemonApps on 19.05.2022, 23:32
+  ~  * Copyright (c) 2022 . All rights reserved.
+  ~  * Last modified 19.05.2022, 23:19
+  ~  */
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="135"
+        android:centerColor="#726E6E"
+        android:endColor="@color/black"
+        android:startColor="@color/black"
+        android:type="linear" />
+</shape>

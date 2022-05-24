@@ -1,0 +1,11 @@
+<!--
+  ~ /**
+  ~  * Created by DemonApps on 19.05.2022, 23:19
+  ~  * Copyright (c) 2022 . All rights reserved.
+  ~  * Last modified 19.05.2022, 23:19
+  ~  */
+  -->
+
+<resources>
+    <dimen name="fab_margin">48dp</dimen>
+</resources>

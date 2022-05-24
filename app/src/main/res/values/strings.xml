@@ -52,6 +52,16 @@
     <string name="video">Клипы</string>
     <string name="share">Поделиться</string>
     <string name="logo">logo</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Кимры гараЖ</string>
+    <string name="nav_header_subtitle">https://vk.com/kimrygarage</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="menu_home">Главная</string>
+    <string name="menu_gallery">Клипы</string>
+    <string name="autoplay">Автопроигрывание</string>
+    <string name="konfidecialnost">Политика конфиденциальности</string>
 
     https://nashe1.hostingradio.ru/nashepunks.mp3
 </resources>
