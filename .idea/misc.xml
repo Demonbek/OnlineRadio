@@ -10,7 +10,7 @@
         <entry key="..\:/Project/OnlineRadio/app/src/main/res/layout-land/activity_main.xml" value="0.1" />
         <entry key="..\:/Project/OnlineRadio/app/src/main/res/layout-land/content_home.xml" value="0.11144578313253012" />
         <entry key="..\:/Project/OnlineRadio/app/src/main/res/layout-land/zastavka.xml" value="0.1" />
-        <entry key="..\:/Project/OnlineRadio/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Project/OnlineRadio/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Project/OnlineRadio/app/src/main/res/layout/activity_main.xml" value="0.14629741119807346" />
         <entry key="..\:/Project/OnlineRadio/app/src/main/res/layout/activity_onas.xml" value="0.1" />
         <entry key="..\:/Project/OnlineRadio/app/src/main/res/layout/activity_proga.xml" value="0.1" />
@@ -21,6 +21,7 @@
         <entry key="..\:/Project/OnlineRadio/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Project/OnlineRadio/app/src/main/res/layout/fragment_slideshow.xml" value="0.1" />
         <entry key="..\:/Project/OnlineRadio/app/src/main/res/layout/nav_header_home.xml" value="0.1" />
+        <entry key="..\:/Project/OnlineRadio/app/src/main/res/layout/settings_activity.xml" value="0.1" />
         <entry key="..\:/Project/OnlineRadio/app/src/main/res/layout/switch_item.xml" value="0.1" />
         <entry key="..\:/Project/OnlineRadio/app/src/main/res/layout/zastavka.xml" value="0.10328997704667177" />
         <entry key="..\:/Project/OnlineRadio/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />

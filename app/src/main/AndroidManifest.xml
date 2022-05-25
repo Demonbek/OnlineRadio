@@ -25,6 +25,7 @@
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup"
         tools:targetApi="m">
+
         <activity
             android:name=".HomeActivity"
             android:exported="false"
@@ -37,19 +38,21 @@
             android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Video"
-            android:label="@string/video"
             android:configChanges="orientation|screenSize"
+            android:label="@string/video"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".Onas"
             android:exported="false"
+            android:configChanges="orientation|screenSize"
             android:label="@string/group"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".OtherApps"
             android:exported="false"
+            android:configChanges="orientation|screenSize"
             android:label="@string/otherApps"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/Theme.AppCompat" />

@@ -1,24 +1,24 @@
 <!--
   ~ /**
-  ~  * Created by DemonApps on 19.05.2022, 23:28
+  ~  * Created by DemonApps on 24.05.2022, 21:40
   ~  * Copyright (c) 2022 . All rights reserved.
-  ~  * Last modified 19.05.2022, 23:28
+  ~  * Last modified 24.05.2022, 21:40
   ~  */
   -->
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
-    <Switch
-        android:id="@+id/app_switch"
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchAutoplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:clickable="true"
         android:checked="true"
-        android:focusable="true"
+        android:clickable="true"
+        android:minHeight="48dp"
+        android:text="@string/autoplay"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 </RelativeLayout>

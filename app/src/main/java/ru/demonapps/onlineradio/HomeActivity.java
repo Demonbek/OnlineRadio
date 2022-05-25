@@ -20,6 +20,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
@@ -28,6 +29,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -42,13 +44,13 @@ import com.yandex.mobile.ads.common.ImpressionData;
 
 import java.io.IOException;
 
-public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, MediaPlayer.OnCompletionListener, MediaPlayer.OnPreparedListener {
+public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, MediaPlayer.OnCompletionListener, MediaPlayer.OnPreparedListener, CompoundButton.OnCheckedChangeListener {
     private static final String blockId = "R-M-1574620-1";
     private BannerAdView mBannerAdViewRadio;
     final String LOG_TAG = "myLogs";
     String url;
     int title, pic;
-    Boolean autoplay;
+    boolean autoplay;
     public static final String STORAGE_NAME = "lastRadio";
     //Ссылки на потоки
     final String DATA_BIKER = "https://listen4.myradio24.com/69846";
@@ -85,6 +87,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     ImageView imageVibor;
     private ProgressBar progressBar;
     Toolbar toolbar;
+    SwitchCompat switchAutoplay;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -104,22 +107,31 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         imageVibor = findViewById(R.id.imageVibor);
         imageVibor.setVisibility(View.VISIBLE);
         myScroll = findViewById(R.id.myScroll);
+        switchAutoplay = navigationView.getMenu().findItem(R.id.app_bar_switch).getActionView().findViewById(R.id.switchAutoplay);
+
         SharedPreferences settings = this.getSharedPreferences(STORAGE_NAME, Context.MODE_PRIVATE);
         url = settings.getString("url", "");
         title = settings.getInt("title", R.string.app_name);
         pic = settings.getInt("pic", R.drawable.vibor);
         autoplay = settings.getBoolean("autoplay", true);
-        Log.d(LOG_TAG, "прочитано " + url + " " + getString(title) + " " + getString(pic));
-
+        switchAutoplay.setChecked(autoplay);
+        Log.d(LOG_TAG, "прочитано " + url + " " + getString(title) + " " + getString(pic)+ ""+autoplay);
+        SharedPreferences.Editor editor = settings.edit();
+        editor.putBoolean("autoplay", autoplay);
+        Log.d(LOG_TAG, "записано " + autoplay);
+        editor.apply();
+        Log.d(LOG_TAG, "прочитано " + url + " " + getString(title) + " " + getString(pic)+ ""+autoplay);
+        //Слушатель на switch автовоспроизведение
+        switchAutoplay.setOnCheckedChangeListener(this);
         // Инициализация медиа плеера
         am = (AudioManager) getSystemService(AUDIO_SERVICE);
-        try {
-            onPlay(url, title, pic);
-        } catch (IOException e) {
-            e.printStackTrace();
+        if (autoplay) {
+            try {
+                onPlay(url, title, pic);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-
-
         // Создание экземпляра mBannerAdView.
         mBannerAdViewRadio = findViewById(R.id.banner_ad_viewRadio);
         mBannerAdViewRadio.setAdUnitId(blockId);
@@ -392,8 +404,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             }
             Intent intent2 = new Intent(this, Video.class);
             startActivity(intent2);
-        } else if (id == R.id.app_switch) {
+        } /*else if (id == R.id.app_bar_switch) {
             //инвертируем состояние флажка
+            Log.d(LOG_TAG, "записано " + autoplay);
             item.setChecked(!item.isChecked());
             autoplay = !autoplay;
             SharedPreferences settings = this.getSharedPreferences(STORAGE_NAME, Context.MODE_PRIVATE);
@@ -401,7 +414,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             editor.putBoolean("autoplay", autoplay);
             Log.d(LOG_TAG, "записано " + autoplay);
             editor.apply();
-        } else if (id == R.id.action_settings3) {
+        }*/
+        else if (id == R.id.action_settings3) {
             Intent intentOtherApps = new Intent(this, OtherApps.class);
             startActivity(intentOtherApps);
 
@@ -427,5 +441,17 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
         super.onPointerCaptureChanged(hasCapture);
+    }
+
+
+    @Override
+    public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+        autoplay = !autoplay;
+        switchAutoplay.setChecked(autoplay);
+        SharedPreferences settings = this.getSharedPreferences(STORAGE_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = settings.edit();
+        editor.putBoolean("autoplay", autoplay);
+        editor.apply();
+        Log.d(LOG_TAG, "записано switch " + autoplay);
     }
 }
