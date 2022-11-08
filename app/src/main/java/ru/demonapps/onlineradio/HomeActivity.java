@@ -41,10 +41,12 @@ import com.yandex.mobile.ads.banner.BannerAdView;
 import com.yandex.mobile.ads.common.AdRequest;
 import com.yandex.mobile.ads.common.AdRequestError;
 import com.yandex.mobile.ads.common.ImpressionData;
+import com.yandex.mobile.ads.common.MobileAds;
 
 import java.io.IOException;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, MediaPlayer.OnCompletionListener, MediaPlayer.OnPreparedListener, CompoundButton.OnCheckedChangeListener {
+    private static final String YANDEX_MOBILE_ADS_TAG = "YandexMobileAds";
     private static final String blockId = "R-M-1574620-1";
     private BannerAdView mBannerAdViewRadio;
     final String LOG_TAG = "myLogs";
@@ -110,7 +112,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         switchAutoplay = navigationView.getMenu().findItem(R.id.app_bar_switch).getActionView().findViewById(R.id.switchAutoplay);
 
         SharedPreferences settings = this.getSharedPreferences(STORAGE_NAME, Context.MODE_PRIVATE);
-        url = settings.getString("url", "");
+        url = settings.getString("url", null);
         title = settings.getInt("title", R.string.app_name);
         pic = settings.getInt("pic", R.drawable.vibor);
         autoplay = settings.getBoolean("autoplay", true);
@@ -132,10 +134,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 e.printStackTrace();
             }
         }
+
+        // Инициализация Яндекс рекламы.
+        MobileAds.initialize(this, () -> Log.d(YANDEX_MOBILE_ADS_TAG, "SDK initialized"));
         // Создание экземпляра mBannerAdView.
         mBannerAdViewRadio = findViewById(R.id.banner_ad_viewRadio);
         mBannerAdViewRadio.setAdUnitId(blockId);
-        mBannerAdViewRadio.setAdSize(AdSize.BANNER_320x50);
+        mBannerAdViewRadio.setAdSize(AdSize.flexibleSize(320, 50));
 
         // Создание объекта таргетирования рекламы.
         final AdRequest adRequest = new AdRequest.Builder().build();

@@ -26,8 +26,6 @@ import com.yandex.mobile.ads.interstitial.InterstitialAdEventListener;
 
 public class Video extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
-    public static final String GOOGLE_API_KEY = "AIzaSyDU9sAsjm1bIHpSC0FGEmiUz76hx_7m7r8";
-    public static final String YOUTUBE_VIDEO_ID = "PLs1NlaW2wItv-frSESFDkpn7QIWYkugsD";
     final String TAG = getClass().getSimpleName();
     private static final String BLOCK_ID = "R-M-1574620-2";
     private InterstitialAd mInterstitialAdVideo;
@@ -38,7 +36,7 @@ public class Video extends YouTubeBaseActivity implements YouTubePlayer.OnInitia
         setContentView(R.layout.activity_video);
 
         YouTubePlayerView youTubePlayerView = findViewById(R.id.youtubePlayerView);
-        youTubePlayerView.initialize(GOOGLE_API_KEY, this);
+        youTubePlayerView.initialize(Constants.GOOGLE_API_KEY, this);
 
         // Создание экземпляра InterstitialAd.
         mInterstitialAdVideo = new InterstitialAd(this);
@@ -161,7 +159,7 @@ public class Video extends YouTubeBaseActivity implements YouTubePlayer.OnInitia
         });
 
         if (!wasRestored) {
-            youTubePlayer.cuePlaylist(YOUTUBE_VIDEO_ID);
+            youTubePlayer.cuePlaylist(Constants.YOUTUBE_VIDEO_ID);
         }
 
     }
