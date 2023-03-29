@@ -112,7 +112,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         switchAutoplay = navigationView.getMenu().findItem(R.id.app_bar_switch).getActionView().findViewById(R.id.switchAutoplay);
 
         SharedPreferences settings = this.getSharedPreferences(STORAGE_NAME, Context.MODE_PRIVATE);
-        url = settings.getString("url", null);
+        url = settings.getString("url", "");
         title = settings.getInt("title", R.string.app_name);
         pic = settings.getInt("pic", R.drawable.vibor);
         autoplay = settings.getBoolean("autoplay", true);
